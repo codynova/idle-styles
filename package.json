@@ -2,7 +2,7 @@
   "name": "idle-styles",
   "version": "0.0.1",
   "description": "A domain-crawling bot for detecting unused CSS",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,29 @@
   "bugs": {
     "url": "https://github.com/codypersinger/idle-styles/issues"
   },
-  "homepage": "https://github.com/codypersinger/idle-styles#readme"
+  "homepage": "https://github.com/codypersinger/idle-styles#readme",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "babel-loader": "^7.1.4",
+    "body-parser": "^1.18.2",
+    "browser-sync": "^2.23.6",
+    "cookie-parser": "^1.4.3",
+    "del": "^3.0.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "pg": "^7.4.1",
+    "request": "^2.85.0",
+    "run-sequence": "^2.2.1",
+    "webpack": "^4.1.1",
+    "webpack-stream": "^4.0.2"
+  }
 }
