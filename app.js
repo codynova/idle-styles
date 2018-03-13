@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
-    console.log('\nUsing local variables.env configuration.');
-}
+    console.log('\nUsing local variables.env parameters.');
+} else console.log('\nUsing default and command-line env parameters.')
 
 const express = require('express');
 const session = require('express-session');
@@ -36,7 +36,6 @@ app.use(bodyParser.json());
 // Postgres
 // *********************************************************************************
 const pool = new postgres.Pool(process.env);
-
 pool.query('SELECT NOW()', async (err, res) => {
     await console.log('\nLOG: \n', err, res, '\n');
     pool.end();
